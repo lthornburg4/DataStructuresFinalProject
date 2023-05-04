@@ -1,4 +1,10 @@
+//Name: Laura Thornburg
+//Class: Data Strucutres
+//EMail: lthornburg1@dmacc.edu
+//Date: 5/3/2023
+
 import java.util.*;
+
 
 class Employee {
     private String name;				//employee name
@@ -106,7 +112,7 @@ public class EmployeeLinkedList {
     	String userApp2;	//second application to add user
     	String userApp3;	//third application to add user
     	String userApp4;	//fourth application to add user
-    	String userApp5;	//fifth appliation to add user
+    	String userApp5;	//fifth application to add user
     	String sIndex;		//index as string
     	int searchIndex;	//index as the int after casting from string from user input
     	String removeEmployee; //Variable to control if remove is completed
@@ -137,6 +143,11 @@ public class EmployeeLinkedList {
             	 
             	 System.out.println("Enter Employee Number: ");		//get user input for employee number
             	 eNumber = userInput.nextLine();
+            	 try {
+            		 empNumber = Integer.parseInt(eNumber);			//casting string from user input to int variable
+            	    } catch (Exception e) {
+            	      System.out.println("You didn't enter a number.");
+            	    }
             	 empNumber = Integer.parseInt(eNumber);			//casting string from user input to int variable
             	 
             	 System.out.println("Enter Application for employee to be added: ");	//get user input for applications to be added
@@ -166,8 +177,7 @@ public class EmployeeLinkedList {
  	        	for (Employee e : employees) {
  	        		System.out.println(e);
  	        	} 
- 	        
- 	        	
+ 	         	
        	 }else if(menuOption.equals("2")) {
         		// Add employees to the list (just to give some additional information for testing to create more names on list without input
         	        employees.add(new Employee("John Doe", 1002, "AD", "Payroll"));
