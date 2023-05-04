@@ -23,6 +23,10 @@ User interfaces for all users is menu driven.  This program will be accessible w
 
 A few dummy employees have been created and are available in the system for this demonstration purpose.
 
+How to use program
+-----------------
+User will start program and make choice from menu provided to either add employees, view list, remove employee from list, view updated list, or exit program.  User will follow prompts on screen for how to enter information and what information should be added.  Unfortunately, I was not able to get the menu to continue to appear so after each menu choice you will have to run prpgram again.  Future iteration of program will have this known issue fixed.
+
 Time/Change Logs
 ----------------
 I did intermittent work on the program throughout the end of the semester.  Most of that was research to determine how to set up the program.  In the last two weeks when I have really focused on the project I have worked about 25 hours/week on the project.
